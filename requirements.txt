@@ -1,6 +1,6 @@
 Flask
 streamlit
-joblib
+joblib==1.4.2
 pandas
 scikit-learn
 numpy

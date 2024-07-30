@@ -6,17 +6,17 @@ import pandas as pd
 # Load the trained model from file
 @st.cache_resource(show_spinner="Loading model...")
 def load_model():
-    model = joblib.load("/Users/sot/final_house_model.pkl")
+    model = joblib.load("final_house_model.pkl")
     return  model
 # Load the preprocessor (e.g., column transformer, scaler, etc.) from file
 @st.cache_resource(show_spinner="Loading converter...")
 def load_converter():
-    converter = joblib.load("/Users/sot/final_converter.pkl")
+    converter = joblib.load("final_converter.pkl")
     return converter
 # Load the list of column names used for feature engineering
 @st.cache_resource(show_spinner="Loading column names...")
 def load_col_names():
-    col_names = joblib.load("/Users/sot/poly_columes.pkl")
+    col_names = joblib.load("poly_columns.pkl")
     return col_names
 # Make predictions using the model and input data
 @st.cache_data(show_spinner="Predicting...")

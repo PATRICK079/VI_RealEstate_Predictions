@@ -1,4 +1,4 @@
-# ₦ Selenium Automation and webscraping victoria island Lagos rental houses for prediction using machine learning 
+# ₦ Selenium Automation and Using BeautifulSoup for webscraping victoria island Lagos rental houses for prediction using machine learning 
 
 [![](https://img.shields.io/badge/Python-FFD43B?style=for-the-badge&logo=python&logoColor=darkgreen)](https://www.python.org)  [![](https://img.shields.io/badge/scikit_learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white)](https://scikit-learn.org/stable/) [![](https://img.shields.io/badge/Numpy-777BB4?style=for-the-badge&logo=numpy&logoColor=white)](https://numpy.org) [![](https://img.shields.io/badge/Pandas-2C2D72?style=for-the-badge&logo=pandas&logoColor=white)](https://pandas.pydata.org) [![](https://img.shields.io/badge/conda-342B029.svg?&style=for-the-badge&logo=anaconda&logoColor=white)](https://www.anaconda.com)
 
@@ -73,7 +73,43 @@ Selenium included strategic pauses to ensure that each webpage and element fully
 KINDLY CLICK ON THE LINK TO SEE MY SELENIUM CODE: https://github.com/PATRICK079/VI_RealEstate_Predictions.git
 
 
+## How BeautifulSoup was Utilized
+
+BeautifulSoup is a powerful Python library used for parsing HTML and XML documents. It creates parse trees from page source code that can be used to extract data easily. In this project, BeautifulSoup was utilized to parse and extract detailed information from the HTML content of the NigeriaPropertyCentre website after Selenium automated the navigation and search processes. Here’s a detailed look at how BeautifulSoup was employed:
+
+#### Fetching the HTML Content
+
+After Selenium navigated to the search results page and the desired data was loaded, the page's HTML content was fetched using the requests library. By simulating a browser request with appropriate headers, BeautifulSoup ensured that the server recognized the request as coming from a real browser, facilitating access to the webpage content.
+
+####  Parsing the HTML Document
+
+BeautifulSoup parsed the HTML content fetched by the requests library. It created a structured tree of the HTML document, enabling easy navigation and data extraction. This parsing transformed the raw HTML into a BeautifulSoup object, which provided various methods to search and navigate the document.
+
+#### Navigating the HTML Structure
+
+BeautifulSoup allowed for efficient navigation through the HTML structure of the webpage. By examining the HTML elements, classes, and IDs, BeautifulSoup identified and targeted specific elements containing the data of interest. For example, it located the main container that held the property listings.
+
+#### Extracting Data from HTML Elements
+Once the relevant HTML elements were identified, BeautifulSoup extracted the required data. This involved:
+
+ - Identifying Tags and Attributes: BeautifulSoup searched for specific HTML tags and attributes that contained the desired data. For example, it identified div tags with specific class names or attributes that represented individual property listings.
+   
+- Extracting Text and Attributes: BeautifulSoup extracted the text content and attributes (such as URLs or image sources) from the targeted HTML elements. This process gathered information such as property prices, locations, number of bedrooms, bathrooms, and other relevant details.
+
+####  Handling Nested Elements
+
+BeautifulSoup efficiently handled nested HTML elements. It navigated through parent-child relationships within the HTML document to extract data from deeply nested elements. This capability was crucial for extracting comprehensive information about each property listing, as details were often nested within multiple layers of HTML tags.
+
+#### Storing and Structuring Data
+
+After extracting the data, BeautifulSoup facilitated the organization and storage of the information in a structured format, such as lists or dictionaries. This structured data was then ready for further analysis and processing, enabling the development of machine learning models for rental price prediction.
+
+####  Handling Multiple Listings
+
+BeautifulSoup was used to iterate through multiple property listings on the results page. By identifying and looping through each listing element, BeautifulSoup extracted data from each property, ensuring a comprehensive dataset covering all listings on the page
 
 
 
+KINDLY CLICK ON THE LINK TO SEE MY BeautifulSoup CODE and process: https://github.com/PATRICK079/VI_RealEstate_Predictions.git
 
+###  Data importation, exploration and preprocessing

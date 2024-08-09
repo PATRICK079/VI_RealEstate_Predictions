@@ -162,6 +162,8 @@ FROM THE ABOVE SUMMARY; IT IS EVIDENT THAT POLYNOMIAL REGRESSION IS MY BEST PERF
    
    streamlit.
 
-BELOW IS STREAMLIT CODE 
-  
+BELOW IS STREAMLIT CODE
 
+  <img width="928" alt="Screen Shot 2024-08-09 at 17 37 47" src="https://github.com/user-attachments/assets/7a98c0a3-9acc-409e-97d6-dcc2f4d22bcf">
+
+KINDLY INTERACT WITH THE DEPLOYED MODEL VIA THIS LINK AND LEAVE A FEEDBACK: https://virealestatehouseprices.streamlit.app/ 

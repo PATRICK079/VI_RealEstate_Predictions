@@ -113,3 +113,55 @@ BeautifulSoup was used to iterate through multiple property listings on the resu
 KINDLY CLICK ON THE LINK TO SEE MY BeautifulSoup CODE and process: https://github.com/PATRICK079/VI_RealEstate_Predictions.git
 
 ###  Data importation, exploration and preprocessing
+
+
+  I imported my dataset as a csv file and  dove into the dataset by gaining insights into the various features and their distributions, i understood the relationships between different vairables and their potential impact on predicting rental houses.
+
+I started off by exploring with countplot on the bedroom feature  to visualize the number of bedrooms in my dataset; similarly, i did same accros other features.
+
+I also did a pairplot with some continous features ( numeric) with hue as my target to visualize if i would have a clearer seperation between prices.
+
+I did more exploration using the bar plot on some numerical features,other  data visualizations were done including correlation matrix and heatmap.
+
+kindly check this link for the complete data exploration: https://github.com/PATRICK079/VI_RealEstate_Predictions.git 
+
+I started the data preprocessing stage by
+
+- Making sure the right data type was asigned to each feature using info()
+
+- Checked for outliers using the box plot on the continous features or using the descritive statistical summary
+
+- Train_test_split the dataset
+
+- Encoded my categorical featurs using get_dummies both on train and test dataset
+
+- I performed feature scaling using MinMax scaler. I fit only on Train and transform train and test. The scaling was done Linear Regression and Elasticnet model alone. 
+
+kindly check this link for the complete data proprocessing: https://github.com/PATRICK079/VI_RealEstate_Predictions.git  
+
+## Model Development
+  
+To solve this project I built some predictive models looking for the best model possible for my predictions and afterwards made comparisons of each model complexity and generalization. The following models were utilized in this project  
+
+- Linear Regression
+- polynomial Regression
+- Elastinet ( LASSO/RIDGE) 
+
+  BELOW IS THE SUMMARY METRICS OF THE BUILT MODELS
+
+<img width="985" alt="Screen Shot 2024-08-09 at 17 24 31" src="https://github.com/user-attachments/assets/a609f1ab-b316-4a16-8629-b3a7994da52f">
+
+
+
+FROM THE ABOVE SUMMARY; IT IS EVIDENT THAT POLYNOMIAL REGRESSION IS MY BEST PERFORMING MODEL. HENCE, POLYNOMIAL REGRESSION WOULD BE SAVED AND DEPLOYED USING STREAMLIT 
+
+
+# MODEL DEPLOYMENT
+
+   My best performing model was saved, including the my columns and ploynimal converter. To put the model into use, i had to deploy the model harnessing the capability of
+   
+   streamlit.
+
+BELOW IS STREAMLIT CODE 
+  
+
